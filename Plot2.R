@@ -12,6 +12,6 @@
 #Create Plot 2
   plot(data2$Global_active_power~data2$Datetime, type="l", ylab="Global Active Power (kilowatts)", xlab="")
 
-#Save plot
+#Save plot 
   dev.copy(png, file="plot2.png", height=480, width=480)
   dev.off()
