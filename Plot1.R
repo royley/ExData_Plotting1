@@ -1,4 +1,4 @@
-#Read data source - assuming the source file is saved in the working directory 
+#Read data source - assuming the source file is saved in the working directory
   data <- read.csv("./household_power_consumption.txt", header=T, sep=';', na.strings="?", nrows=2075259, check.names=F, stringsAsFactors=F, comment.char="", quote='\"')
   data$Date <- as.Date(data$Date, format="%d/%m/%Y")
 
